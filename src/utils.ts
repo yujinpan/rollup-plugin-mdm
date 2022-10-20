@@ -24,7 +24,7 @@ export default function() {
 export function createVueComponent(html: string, className: string) {
   return `export default {
   render(h) {
-    h('div', {
+    return h('div', {
       class: '${className}',
       domProps: {
         innerHTML: ${html}
