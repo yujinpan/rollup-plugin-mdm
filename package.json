@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-md-shiki",
+  "name": "rollup-plugin-mdm",
   "version": "1.0.0",
   "description": "Transform .md to highlight html/vue/react.",
   "main": "lib/index.js",
@@ -37,13 +37,13 @@
     "typescript": "^4.8.3"
   },
   "bugs": {
-    "url": "https://github.com/yujinpan/rollup-plugin-md-shiki/issues"
+    "url": "https://github.com/yujinpan/rollup-plugin-mdm/issues"
   },
-  "homepage": "https://github.com/yujinpan/rollup-plugin-md-shiki#readme",
+  "homepage": "https://github.com/yujinpan/rollup-plugin-mdm#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/yujinpan/rollup-plugin-md-shiki.git"
+    "url": "git+ssh://git@github.com/yujinpan/rollup-plugin-mdm.git"
   },
   "dependencies": {
     "@types/markdown-it": "^12.2.3",

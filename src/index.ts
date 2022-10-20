@@ -33,7 +33,7 @@ const plugin = (options: Options = {}) => {
   const pattern = /\.md(\?(html|react|vue))?$/;
 
   return {
-    name: 'rollup-plugin-md-shiki',
+    name: 'mdm',
     async resolveId(id, importer, options) {
       if (pattern.test(id)) {
         const base = id.replace(pattern, '.md');
