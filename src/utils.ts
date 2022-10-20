@@ -6,8 +6,18 @@ export function createHtmlModule(html: string, className: string) {
 }
 
 export function createReactComponent(html: string, className: string) {
-  return `export default function() {
-  return <div className="${className}" dangerouslySetInnerHTML={{__html: ${html}}}></div>;
+  return `import { createElement } from 'react';
+
+export default function() {
+  return createElement(
+    'div', 
+    { 
+      className: '${className}',
+      dangerouslySetInnerHTML: {
+        __html: ${html}
+      }
+    }
+  );
 }`;
 }
 
