@@ -4,7 +4,9 @@ Import markdown module for rollup & vite.
 
 ## Usage
 
-`npm i -D rollup-plugin-mdm`
+```shell
+npm i -D rollup-plugin-mdm
+```
 
 rollup.config.js
 
@@ -16,6 +18,12 @@ module.exports = {
     mdm()
   ]
 }
+```
+
+use github css:
+
+```shell
+npm i github-markdown-css
 ```
 
 ### import as html
@@ -145,3 +153,17 @@ The container class name, default is `markdown-body` (github css).
 - injectStyle
 
 Inject markdown style, default is `'github-markdown-css/github-markdown-light.css'`, set false remove it.
+
+## Type shims
+
+Includes shims file to your `tsconfig.json`.
+
+```json
+{
+  "include": [
+    "node_modules/rollup-plugin-mdm/shims-html.d.ts",
+    "node_modules/rollup-plugin-mdm/shims-react.d.ts",
+    "node_modules/rollup-plugin-mdm/shims-vue.d.ts"
+  ]
+}
+```
