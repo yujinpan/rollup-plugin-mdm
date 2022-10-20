@@ -1,7 +1,7 @@
 export function createHtmlModule(html: string, className: string) {
-  const content = `<div class="${className}">
-  ${html.slice(1, -1)}
-</div>`;
+  const content = `\`<div class="${className}">
+${html.slice(1, -1)}
+</div>\``;
   return `export default ${content}`;
 }
 
