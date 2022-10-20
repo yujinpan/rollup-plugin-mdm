@@ -13,15 +13,20 @@ import {
 export type Options = Omit<MarkdownItOptions, 'html' | 'highlight'> & {
   theme?: Theme;
   className?: string;
-  injectStyle?: string;
+  injectStyle?: string | boolean;
 };
 
 const plugin = (options: Options = {}) => {
   options = {
     theme: 'material-lighter',
     className: 'markdown-body',
-    injectStyle: 'github-markdown-css/github-marker-light.css',
     ...options,
+    injectStyle:
+      'injectStyle' in options && !options.injectStyle
+        ? ''
+        : typeof options.injectStyle === 'string'
+        ? options.injectStyle
+        : 'github-markdown-css/github-marker-light.css',
   };
   const markdownItPromise = createMarkdownIt(options);
 
