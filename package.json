@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-mdm",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.1",
   "description": "Transform .md to highlight html/vue/react.",
   "main": "lib/index.js",
   "files": [
