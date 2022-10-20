@@ -4,7 +4,8 @@
   "description": "Transform .md to highlight html/vue/react.",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "shims-*"
   ],
   "keywords": [
     "rollup",
