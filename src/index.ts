@@ -12,14 +12,14 @@ import {
 } from './utils';
 
 export type Options = Omit<MarkdownItOptions, 'html' | 'highlight'> & {
-  theme?: Theme;
+  codeTheme?: Theme;
   className?: string;
   injectStyle?: string | boolean;
 };
 
 const plugin = (options: Options = {}) => {
   options = {
-    theme: 'material-lighter',
+    codeTheme: 'material-lighter',
     className: 'markdown-body',
     ...options,
     injectStyle:
@@ -86,7 +86,7 @@ export default plugin;
 export function createMarkdownIt(options: Options) {
   return shiki
     .getHighlighter({
-      theme: options.theme,
+      theme: options.codeTheme,
     })
     .then((highlighter) => {
       return new MarkdownIt({
