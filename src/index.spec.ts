@@ -11,7 +11,7 @@ const code = `## Title
 description...
 
 > reference...`;
-const injectStyleModule = `import 'github-markdown-css/github-marker-light.css'`;
+const injectStyleModule = `import 'github-markdown-css/github-markdown-light.css'`;
 const html = `\`<h2>Title</h2>
 <p>description…</p>
 <blockquote>

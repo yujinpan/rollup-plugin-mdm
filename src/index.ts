@@ -27,7 +27,7 @@ const plugin = (options: Options = {}) => {
         ? ''
         : typeof options.injectStyle === 'string'
         ? options.injectStyle
-        : 'github-markdown-css/github-marker-light.css',
+        : 'github-markdown-css/github-markdown-light.css',
   };
   const markdownItPromise = createMarkdownIt(options);
   const pattern = /\.md(\?(html|react|vue))?$/;

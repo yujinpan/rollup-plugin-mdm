@@ -29,7 +29,7 @@ export { default as html } from './test.md';
 - output
 
 ```js
-import 'github-markdown-css/github-marker-light.css';
+import 'github-markdown-css/github-markdown-light.css';
 
 var test = `<div class="markdown-body">
 <h2>Title</h2>
@@ -50,7 +50,7 @@ export { default as react } from './test.md?react';
 - output
 
 ```js
-import 'github-markdown-css/github-marker-light.css';
+import 'github-markdown-css/github-markdown-light.css';
 import { createElement } from 'react';
 
 function test$1() {
@@ -80,7 +80,7 @@ export { default as vue } from './test.md?vue';
 - output
 
 ```js
-import 'github-markdown-css/github-marker-light.css';
+import 'github-markdown-css/github-markdown-light.css';
 
 var test = {
   render(h) {
@@ -144,4 +144,4 @@ The container class name, default is `markdown-body` (github css).
 
 - injectStyle
 
-Inject markdown style, default is `'github-markdown-css/github-marker-light.css'`, set false remove it.
+Inject markdown style, default is `'github-markdown-css/github-markdown-light.css'`, set false remove it.
