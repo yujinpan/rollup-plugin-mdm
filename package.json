@@ -17,7 +17,7 @@
     "publish:patch": "npm version patch && npm publish",
     "version": "npm run build",
     "postversion": "git push --all && git push --tags",
-    "build": "rm -rf lib && tsc --build tsconfig.app.json",
+    "build": "rm -rf lib && tsc --build tsconfig.app.json && node scripts/patchCJS.js",
     "test": "jest"
   },
   "author": "yujinpan",
