@@ -7,5 +7,5 @@
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
-  "references": [{ "path": "./tsconfig.spec.json" }]
+  "references": [{ "path": "./tsconfig.spec.json" }],
 }
